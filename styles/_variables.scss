@@ -1,0 +1,16 @@
+@use 'helpers' as *;
+
+:root {
+
+  --font-family-base: 'Popins', sans-serif;
+  --font-family-accent: 'Dancing Script', sans-serif;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
+}

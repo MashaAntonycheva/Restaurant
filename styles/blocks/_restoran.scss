@@ -1,0 +1,73 @@
+@use '../helpers' as *;
+
+.restoran {
+    display: flex;
+    justify-content: center;
+    background-color: #0B0E11;
+
+    &__container {
+        display: grid;
+        grid-template-rows: 268px 500px 159px;
+        max-width: 1170px;
+        gap: 70px;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 349px 510px;
+        gap: 311px;
+        padding-top: 100px;
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: 36px;
+            color: #e3c08d;
+            padding-bottom: 15px;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 36px;
+            color: #fff;
+            padding-bottom: 66px;
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #d4d4d4;
+            margin-top: 75px;
+        }
+    }
+
+    &__briefly {
+        display: grid;
+        grid-template-columns: 169px 126px;
+        gap: 179px;
+        justify-content: center;
+
+        &-grid {
+            display: grid;
+            grid-template-rows: 81px 30px;
+        }
+
+        &-quantity {
+            text-align: center;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 54px; 
+            color: #e3c08d;
+        }
+
+        &-info {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@use '../helpers' as *;
+
+.appertizer {
+    background-color: #0D1518;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+
+    &__menu {
+        position: relative;
+        background-color: #fff;
+        width: 490px;
+        z-index: 3;
+        
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: rem(40);
+            padding: 25px 282px 40px 44px;
+            color: #E3C08D;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: rem(20);
+            padding-left: 44px;
+            padding-bottom: 8px;
+            color: #0F1622;
+
+            &-price {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: rem(20);
+                padding-left: 44px;
+                padding-bottom: 8px;
+                color: #E3C08D;
+            }
+
+    
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            padding-left: 44px;
+            padding-bottom: 30px;
+            color: #808080;
+            padding-right: 70px;
+        }
+    }
+
+    &__img {
+        &-one{
+            margin: -647px 0px 0px 315px;
+            clip-path: polygon(0 0, 79% 0, 100% 26%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-two{
+            margin: 23px 0px 0px 399px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 100% 66%, 77% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-three{
+            margin: -539px 0px 0px 750px;
+            clip-path: polygon(21% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 17%);
+        }
+
+        &-four{
+            position: relative;
+            z-index: 1;
+            margin: -369px 0px 0px 647px;
+        }
+
+        &-five{
+            position: relative;
+            z-index: 1;
+            margin: 31px 0px 0px 1015px;
+        }
+    }
+}
+.menu {
+    max-width: 1205px;
+    padding: 100px 85px 100px 0px;
+}
+
+

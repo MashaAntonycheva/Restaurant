@@ -1,0 +1,86 @@
+@use '../helpers' as *;
+
+.biryani {
+    background-color: #0D1518;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+    &__menu {
+        position: relative;
+        background-color: #fff;
+        width: 442px;
+        z-index: 3;
+        margin-top: 100px;
+        
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: rem(40);
+            padding: 25px 93px 40px 44px;
+            color: #E3C08D;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: rem(20);
+            padding-left: 44px;
+            padding-bottom: 8px;
+            color: #0F1622;
+
+            &-price {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: rem(20);
+                padding-left: 44px;
+                padding-bottom: 8px;
+                color: #E3C08D;
+            }
+
+    
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            padding-left: 44px;
+            padding-bottom: 30px;
+            color: #808080;
+        }
+    }
+
+    &__img {
+        &-one{
+            margin: -811px 0px 0px 345px;
+            padding-top: 100px;
+            clip-path: polygon(11% 0, 88% 0, 100% 27%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-two{
+            margin: 31px 0px 0px 365px;
+            clip-path: polygon(11% 0, 100% 0, 100% 0, 100% 65%, 74% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-three{
+            margin: -252px 0px 0px 725px;
+            clip-path: polygon(11% 0, 79% 0, 100% 28%, 100% 100%, 79% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-four{
+            margin: -434px 174px 0px 650px;
+            position: relative;
+            z-index: 3;
+        }
+
+        &-five{
+            margin: 94px 0px 0px 1060px;
+            position: relative;
+            z-index: 3;
+        }
+    }
+}
+

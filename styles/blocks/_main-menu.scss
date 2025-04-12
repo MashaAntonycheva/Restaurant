@@ -1,0 +1,70 @@
+@use '../helpers' as *;
+
+.main {
+    position: relative;
+    background-color: #0B0E11;
+    max-height: 780px;
+    height: 100%;
+    padding-top: 180px;
+    margin-top: 0px;
+    padding-bottom: 255px;
+    display: flex;
+    justify-content: center;    
+    
+
+    &__menu {
+        position: absolute;
+        background-color: #fff;
+        width: 453px;
+        margin-left: 60px;
+        z-index: 3;
+        padding-top: 50px;
+        
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: rem(20);
+            padding-left: 44px;
+            padding-bottom: 13px;
+            padding-top: 53px;
+            color: #0F1622;
+            margin-top: -60px;
+
+            &-price {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: rem(20);
+                padding-left: 44px;
+                padding-bottom: 8px;
+                color: #E3C08D;
+            }
+
+    
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            padding-left: 44px;
+            padding-bottom: 30px;
+            color: #808080;
+            padding-right: 50px;
+        }
+    }
+
+    &__img {
+        &-one{
+            margin: -90px 0px 0px 409px;
+        }
+
+        &-two{
+            margin: -591px 0px 0px 400px;
+        }
+
+        &-three{
+            margin: 308px 0px 0px 1090px;
+        }
+    }
+}
+

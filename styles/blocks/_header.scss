@@ -1,0 +1,100 @@
+@use '../helpers' as *;
+
+
+.header-main {
+    background-image: url('../../images/home/background.jpg'); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 810px;
+    margin-bottom: 150px;
+    padding-top: 14px;
+    padding-right: 130px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1235px;
+    margin-left: 71px;
+}
+
+
+.nav__list {
+    display: grid;
+    grid-template-columns: 40px 78px 57px 74px 41px;
+    gap: 40px;
+}
+
+
+.nav__link {
+    font-family: Poppins;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: rem(16);
+}
+
+.nav__link--active {
+    color: #a26100;
+    &-svg {
+        color: #a26100;
+        margin-top: 30px;
+        margin-left: -47px;
+    }
+}
+
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1155px;
+    margin: 0px 0px 0px 135px;
+
+}
+
+.header__hero {
+    text-align: left;  
+}
+
+.header__title {
+    font-family: Dancing Script;
+    font-size: rem(36);
+    color: #a26100;
+}
+
+.header__subtitle {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: rem(50);
+    line-height: rem(60);
+    padding-top: 10px;
+}
+
+.header__text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: rem(20);
+    padding-top: 25px;
+    max-width: 510px;
+    color: #808080;
+}
+
+.header__button {
+    background-color: #a26100;
+    color: white;
+    padding: 18px 55px;
+    text-decoration: none;
+    margin-top: 38px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.header__img {
+    margin-top: 80px;
+}

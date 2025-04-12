@@ -1,0 +1,77 @@
+@use '../helpers' as *;
+
+.quotes {
+    background-color: #0D1518;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+    overflow: hidden;
+
+    &__img-one {
+        margin-left: 1211px;
+    }
+
+    &__img-two {
+        margin: -278px 0px 178px 30px;
+    }
+
+    &__conteiner {
+        max-width: 1440px;
+    }
+
+    &__photo {
+        margin: -35px 0px 0px 130px;
+    }
+
+    &__img {
+        margin: -343px -34px 22px 712px;
+    }
+
+    &__info {
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        width: 590px;
+        height: 386px;
+        margin: 15px -225px 61px 600px;
+        padding-left: 40px;
+        clip-path: polygon(0 0, 87% 0, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: 36px;
+            color: #e3c08d;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 36px;
+            color: #0f1622;
+            padding-bottom: 20px;
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #808080; 
+            padding-bottom: 40px;
+            padding-right: 40px;
+        }
+
+        &-name {
+            font-family: Dancing Script;
+            font-weight: 600;
+            font-size: 16px;
+            color: #d7b686;
+            padding-bottom: 40px;
+        }
+    }
+
+
+}
