@@ -1,0 +1,99 @@
+@use '../helpers' as *;
+
+.cuisine {
+    background-color: #0b0e11;
+
+    &__container {
+      margin: 0 auto;
+      max-width: 1440px;
+      width: 100%;
+    }
+} 
+ 
+.header {
+    &__title-cuisine {
+       font-family: Dancing Script;
+       font-weight: 400;
+       font-size: 36px;
+       padding-top: 40px;
+       text-align: center;
+       color: #E3C08D;
+       padding-bottom: rem(30);
+    }
+
+    &__subtitle-cuisine {
+       font-family: Poppins;
+       font-size: rem(36);
+       margin-bottom: rem(30);
+       color: white;
+       text-align: center;
+       padding-bottom: 40px;
+
+    }
+}
+
+.cuisine-cards {
+    display: grid;
+    grid-template-columns: rem(570) rem(570);
+    grid-template-rows: rem(200) rem(200);
+    justify-items: stretch;
+    justify-content: center;
+    padding-bottom: rem(100);
+    max-width: 1165px;
+    margin: 0px 137px 0px 137px;
+}
+
+.cuisine-card {
+    background-color: #182226;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: rem(20);
+    margin: rem(10);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__eating {
+        display: grid;
+        grid-template-columns: rem(80) 1fr;
+        grid-template-areas:
+          'icon info'
+          'icon description';
+        align-items: center;
+        gap: rem(12) rem(20);
+        padding-top: rem(30);
+        padding-right: rem(50);
+        padding-left: rem(40);
+    }
+
+    &__one {
+        clip-path: polygon(7% 0, 100% 0, 100% 20%, 100% 80%, 93% 100%, 8% 100%, 0 100%, 0 19%);
+    }
+
+    &__two {
+        clip-path: polygon(0 0, 93% 1%, 100% 20%, 100% 100%, 100% 100%, 7% 100%, 0 80%, 0 0);
+    }
+
+    &__icon {
+        padding-bottom: 85px;
+    }
+
+    &__title {
+        color: #E3C08D;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: rem(22);
+        padding-bottom: rem(12);
+        margin-top: rem(-45);
+    }
+
+    &__description {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: rem(14);
+        color: #808080;
+        list-style: rem(26);
+    }
+}
+

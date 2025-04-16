@@ -1,0 +1,76 @@
+@use '../helpers' as *;
+
+.footer {
+    background-color: #0B0E11;
+
+    &__svg {
+        color: #E3C08D;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 335px 600px;
+        justify-content: center;
+        gap: 70px;
+
+
+    }
+
+    &__about{
+        &-logo {
+            padding-top: 117px;
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            line-height: rem(34);
+            color: #A1A1A1;
+            padding-top: 30px;
+        }
+
+        &-contacts {
+            display: grid;
+            grid-template-columns: repeat(4, 18px);
+            gap: 23px;
+            padding-top: 30px;
+        }
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 118px 255px;
+        gap: 100px;
+        padding-top: 185px;
+        padding-left: 200px;
+
+        &-title {
+            color: #fff;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: rem(34);
+        }
+
+        &-list {
+            text-decoration: none;
+            color: #A1A1A1;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            line-height: rem(34);
+
+            &--find {
+                text-decoration: none;
+                color: #A1A1A1;
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: rem(16);
+                line-height: rem(34);
+                margin-left: -40px;
+            }
+        }       
+
+    }
+}

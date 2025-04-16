@@ -1,0 +1,86 @@
+@use '../helpers' as *;
+
+.deserts {
+    background-color: #0B0E11;
+    margin-top: -1px;
+    margin-bottom: 52px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+    &__menu {
+        position: relative;
+        background-color: #fff;
+        width: 442px;
+        margin: 145px 138px 100px 860px;
+        z-index: 3;
+        
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: rem(40);
+            padding: 25px 282px 40px 44px;
+            color: #E3C08D;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: rem(20);
+            padding-left: 44px;
+            padding-bottom: 8px;
+            color: #0F1622;
+
+            &-price {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: rem(20);
+                padding-left: 44px;
+                padding-bottom: 8px;
+                color: #E3C08D;
+            }
+
+    
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: rem(16);
+            padding-left: 44px;
+            padding-bottom: 30px;
+            color: #808080;
+        }
+    }
+
+    &__img {
+        &-one{
+            margin: -712px 555px -42px 271px;
+            clip-path: polygon(0 0, 79% 0, 100% 26%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-two{
+            margin: -274px 3px 0px 559px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 100% 66%, 77% 100%, 0 100%, 0 100%, 0 0);
+        }
+
+        &-three{
+            margin: 25px 0px 0px 133px;
+            clip-path: polygon(21% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 17%);
+        }
+
+        &-four{
+            position: relative;
+            z-index: 1;
+            margin: -486px 0px 0px 414px;
+        }
+
+        &-five{
+            margin: 157px 0px 0px 81px;
+            
+        }
+    }
+}
+

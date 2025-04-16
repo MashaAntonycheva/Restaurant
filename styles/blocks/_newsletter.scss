@@ -1,0 +1,69 @@
+@use '../helpers' as *;
+
+.newsletter {
+    background-color: #0D1518;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1440px;
+        overflow: hidden;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 293px 750px;
+        gap: 80px;
+        padding: 0px 150px;
+        margin-top: -60px;
+        padding-bottom: 100px;
+    }
+
+    &__header {
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            color: #e3c08d;
+            font-size: 36px;
+            padding-bottom: 15px;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            font-size: 36px;
+        }
+    }
+
+    &__email {
+        display: grid;
+        grid-template-columns: 500px 160px;
+        gap: 20px;
+        margin-top: 20px;
+
+        &-button {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            font-size: 16px;
+            background-color: #E3C08D;
+            padding: 18px 30px;
+            border: none;
+        }
+
+        &-input {
+            padding: 18px 320px 18px 30px;
+            color: #D4D4D4;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            border: none;
+        }
+    }
+
+    &__img-two {
+        float: right;
+        margin-top: -320px;
+    }
+}
