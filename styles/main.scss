@@ -1,0 +1,36 @@
+@use 'normalize';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/burger-button';
+@use 'blocks/cuisine';
+@use 'blocks/history';
+@use 'blocks/video-main';
+@use 'blocks/recommendation-menu';
+@use 'blocks/reservation';
+@use 'blocks/reviews';
+@use 'blocks/recipes';
+@use 'blocks/newsletter';
+@use 'blocks/footer';
+@use 'blocks/main-menu';
+
+
+@use 'blocks/ourmenu';
+@use 'blocks/promooffer';
+@use 'blocks/appertizer';
+@use 'blocks/course';
+@use 'blocks/biryani';
+@use 'blocks/deserts';
+@use 'blocks/discover';
+
+@use 'blocks/restoran';
+@use 'blocks/quotes';
+@use 'blocks/mission';
+
+@use 'blocks/connection';
+@use 'blocks/work';
+@use 'blocks/chef';
+@use 'blocks/networks';
+@use 'blocks/map';

@@ -1,0 +1,44 @@
+@use 'helpers' as *;
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: rem(1300);
+
+  @include tablet {
+    max-width: rem(1000);
+  }
+
+  @include mobile {
+    max-width: rem(760);
+  }
+
+  @include mobile-s {
+    max-width: rem(420);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
