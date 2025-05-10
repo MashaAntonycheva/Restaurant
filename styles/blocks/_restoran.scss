@@ -1,0 +1,170 @@
+@use '../helpers' as *;
+
+.restoran {
+    display: flex;
+    justify-content: center;
+    background-color: #0B0E11;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @include tablet {
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+
+        @include tablet {
+            padding-top: 70px;
+        }
+
+        @include mobile-s {
+            padding-top: 35px;
+        }
+
+        &-body {
+            width: fluid(346, 150);
+            height: auto;
+        }
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: 36px;
+            color: #e3c08d;
+            padding-bottom: 15px;
+
+            @include tablet {
+                font-size: 25px;
+            }
+
+            @include mobile {
+                 font-size: 20px;
+            }
+
+            @include mobile-s {
+                font-size: 15px;
+            }
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 36px;
+            color: #fff;
+            padding-bottom: 66px;
+
+            @include tablet {
+                font-size: 25px;
+            }
+
+            @include mobile {
+                 font-size: 20px;
+                 padding-bottom: 24px;
+            }
+
+            @include mobile-s {
+                font-size: 15px;
+            }
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #d4d4d4;
+            margin-top: 75px;
+            width: fluid(510, 200);
+            height: auto;
+
+            @include tablet {
+                font-size: 13px;
+                margin-top: 30px;
+            }
+
+            @include mobile {
+                font-size: 10px;
+                margin-top: 25px;
+            }
+
+            @include mobile-s {
+                font-size: 8px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__briefly {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+
+        @include tablet {
+            padding-bottom: 70px;
+        }
+
+        @include mobile-s {
+            padding-bottom: 25px;
+        }
+
+        &-grid {
+            text-align: center; /* Общий текстовый выравнивание */
+            margin: 0 20px;
+        }
+
+        &-quantity {
+            text-align: center;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 36px;
+            color: #e3c08d;
+
+            @include tablet {
+                font-size: 25px;
+            }
+
+            @include mobile {
+                 font-size: 20px;
+            }
+
+            @include mobile-s {
+                font-size: 15px;
+            }
+        }
+
+        &-info {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 20px;
+            color: #fff;
+
+            @include tablet {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            @include mobile {
+                font-size: 10px;
+            }
+
+            @include mobile-s {
+                font-size: 8px;
+            }
+        }
+    }
+
+    &__img {
+        width: fluid(1170, 355);
+        height: auto;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,121 @@
+@use '../helpers' as *;
+
+.quotes {
+    background-color: #0D1518;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+    overflow: hidden;
+
+    &__img-one {
+        position: relative;
+        top: 0%;
+        left: 91%;
+        width: fluid(173, 70);
+        height: auto;
+    }
+
+    &__img-two {
+        position: relative;
+        top: -4%;
+        left: 40%;
+        width: fluid(173, 70);
+        height: auto;
+        z-index: 5;
+    }
+
+    &__container {
+        width: 1440px;
+        position: relative;
+        padding: 0px 20px;
+    }
+
+    &__photo {
+        position: absolute;
+        width: fluid(536, 200);
+        height: auto;
+        top: 16%;
+        left: 12%;
+    }
+
+    &__img {
+        position: relative;
+        top: 10%;
+        left: 50%;
+        width: fluid(77, 25);
+        height: auto;
+        z-index: 5;
+    }
+
+    &__info {
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        width: fluid(590, 200);
+        height: auto;
+        padding-left: 40px;
+        top: 12%;
+        left: 45%;
+        clip-path: polygon(0 0, 87% 0, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: fluid(36, 15);
+            color: #e3c08d;
+            padding-top: 40px;
+            padding-bottom: 20px;
+
+            @include tablet {
+                padding-top: 13px;
+                padding-bottom: 7px;
+            }
+
+            @include mobile-s {
+                padding-top: 7px;
+                padding-bottom: 1px;
+            }
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: fluid(36, 15);
+            color: #0f1622;
+            padding-bottom: 20px;
+
+            @include mobile-s {
+                padding-bottom: 1px;
+            }
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: fluid(16, 7);
+            line-height: 162%;
+            color: #808080; 
+            padding-bottom: 40px;
+            padding-right: 40px;
+
+            @include tablet {
+                padding-bottom: 25px;
+            }
+
+            @include mobile-s {
+                padding-bottom: 7px;
+                padding-right: 15px;
+            }
+        }
+
+        &-name {
+            font-family: Dancing Script;
+            font-weight: 600;
+            font-size: fluid(16, 7);
+            color: #d7b686;
+            padding-bottom: 40px;
+        }
+    }
+
+
+}

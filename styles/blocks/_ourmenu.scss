@@ -1,0 +1,119 @@
+@use '../helpers' as *;
+
+.header-other {
+    background: linear-gradient(#000 8%, rgba(11, 19, 21, 0) 27%, rgba(0, 0, 0, 0.7) 82%, rgba(11, 19, 21, 0.7) 99%);        
+    height: 400px;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+        height: 390px;
+    }
+
+    @include mobile {
+        height: 270px;
+    }
+
+    @include mobile-s {
+        height: 230px;
+    }
+    
+}
+
+.header {
+    &__body {
+        &-main { 
+
+            &--inner-other {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: rem(-83);
+    
+                @include tablet {
+                    margin-top: rem(-100);
+                }
+    
+                @include mobile {
+                    margin-top: rem(-50);
+                }
+                @include mobile-s {
+                    margin-top: rem(-46);
+                }
+            }
+        }
+        
+
+        &-other {
+            display: flex;
+            width: fluid(1440, 370);
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+
+    &__ourmenu {
+        &-title {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: fluid(50, 20);
+            color: #fff;
+        }
+
+        &-img--one {
+            position: relative;
+            top: 56%;
+
+            @include tablet {
+                width: 130px;
+                top: 90%;
+            }
+
+            @include mobile {
+                width: 100px;
+                top: 74%;
+            }
+
+            @include mobile-s {
+                width: 80px;
+                top: 79%;
+            }
+        }
+
+        &-img--two {
+            @include tablet {
+                width: 130px;
+                position: relative;
+                left: 6px;
+            }
+
+            @include mobile {
+                width: 91px;
+                left: 11px;
+            }
+
+            @include mobile {
+                left: 20px;
+            }
+        }
+    }
+
+    &__menu-link--other{
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        color: #d1d1d1;
+
+        @include mobile {
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+}
+
+    

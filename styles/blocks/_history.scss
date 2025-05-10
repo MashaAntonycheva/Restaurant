@@ -1,0 +1,191 @@
+@use '../helpers' as *;
+
+.about-us {
+    &__background {
+        background-color: #0d1518;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+        &-container {
+            margin: 100px auto;
+            max-width: rem(1440);
+            max-height: rem(600);
+
+            @include tablet {
+                max-height: rem(380);
+            }
+
+            @include mobile {
+                max-height: rem(220);
+            }
+        }
+
+    }
+
+    &__img-one {
+        max-width: 100%;
+        display: block;
+        position: relative;
+        top: 1%;
+        left: -35%; 
+        
+        @include tablet {
+            left: -39%;
+        }
+
+        @include mobile {
+            left: -40%;
+        }
+    }
+
+    &__img-two {
+        max-width: 100%;
+        display: block;
+        position: relative;
+        top: -102%;
+        left: 32%;
+
+        @include tablet {
+            top: -118%;
+        }
+
+        @include mobile {
+            top: -132%;
+            left: 16%;
+        }
+
+        @include mobile-s {
+            top: -154%;
+            left: 15%;
+        }
+    }
+
+    &__briefly {
+        background-color: white;
+        width: 570px;
+        position: relative;
+        top: -160%;
+        left: 51%;
+        clip-path: polygon(0 0, 86% 0, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+        @include tablet {
+            width: 390px;
+            top: -178%;
+        }
+
+        @include mobile {
+            width: 282px;
+            top: -215%;
+        }
+
+        @include mobile-s {
+            width: 193px;
+            top: -200%;
+            left: 29%;
+        }
+    }
+
+
+    &__title {
+        font-family: Dancing Script;
+        font-weight: 700;
+        color: #e3c08d;
+        padding-top: 35px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        font-size: fluid(36, 11);
+
+        @include tablet {
+            padding: 10px 20px;
+        }
+    }
+
+    &__subtitle {
+        font-family: Poppins;
+        font-weight: 600;
+        color: #0f1622;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-size: fluid(36, 11);
+
+        @include tablet {
+            padding: 0px 20px;
+        }
+    }
+
+    &__text {
+        font-family: Poppins;
+        font-weight: 400;
+        color: #808080;
+        font-size: fluid(16, 6);
+        line-height: 26px;
+        padding-left: 30px;
+        padding-right: 45px;
+        padding-bottom: 57px;
+
+        @include tablet {
+            padding: 0px 20px;
+        }
+
+        @include mobile-s {
+            line-height: 17px;
+        }
+    }
+
+    &__button {
+        color: #D7B686;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: fluid(16, 6);
+        padding-left: 30px;
+        padding-bottom: 40px;
+
+        @include tablet {
+            padding: 20px;
+        }
+
+    }
+
+    &__icon {
+        padding-left: 8px;
+        padding-top: 1px;
+    }
+}
+
+.about__img-one {
+    clip-path: polygon(0 0, 80% 0, 100% 13%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+    @include tablet {
+        width: 250px;
+    }
+
+    @include mobile {
+        width: 150px;
+    }
+}
+
+.about__img-two {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 23% 100%, 0 87%, 0 0);
+
+    @include tablet {
+        width: 250px;
+    }
+
+    @include mobile {
+        width: 150px;
+    }
+}
+
+.about__img-tree {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    top: -96%;
+    left: 21%;
+
+    @include tablet {
+        width: 0px;
+    }
+}

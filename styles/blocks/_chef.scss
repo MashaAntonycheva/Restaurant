@@ -1,0 +1,125 @@
+@use '../helpers' as *;
+
+.chef {
+    background-color: #0B0E11;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 100px 0px;
+
+        @include mobile {
+            margin: 60px 0px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 410px 668px;
+        gap: 105px;
+        justify-content: center;
+
+        @include tablet {
+            grid-template-columns: 313px 450px;
+            gap: 54px;
+        }
+
+        @include mobile {
+            grid-template-columns: 248px 317px;
+            gap: 29px;
+        }
+
+        @include mobile-s {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__header {
+        &-title {
+            font-family: Dancing Script;
+            font-size: fluid(36, 15);
+            font-weight: 700;
+            color: #e3c08d;
+            text-align: left;
+
+            @include mobile-s {
+                text-align: center;
+            }
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-size: fluid(36, 15);
+            font-weight: 600;
+            color: #ffffff;
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 20px;
+
+            @include mobile {
+                padding: 5px 0px;
+            }
+
+            @include mobile-s {
+                text-align: center;
+            }
+        }
+
+        &-paragraph {
+            font-family: Poppins;
+            font-size: fluid(16, 8);
+            font-weight: 400;
+            color: #d4d4d4;
+            text-align: left;
+            line-height: 162%;
+            padding-bottom: 60px;
+
+            @include mobile {
+                padding-bottom: 15px;
+            }
+            @include mobile-s {
+                text-align: center;
+                width: 300px;
+            }
+        }
+
+        &-button {
+            font-family: Poppins;
+            font-size: fluid(16, 8);
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            padding: 18px 61px;
+            background-color: #E3C08D;
+            border: none;
+
+            @include mobile {
+                padding: 10px 29px;
+            }
+
+            @include mobile-s {
+                position: relative;
+                left: 31%;
+            }
+        }
+    }
+
+    &__img {
+        margin: -129px 0px 0px 1038px;
+    }
+
+    &__photo {
+        @include tablet {
+            width: 450px;
+        }
+
+        @include mobile {
+            width: 330px;
+        }
+    }
+}
+

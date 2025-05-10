@@ -1,0 +1,132 @@
+@use '../helpers' as *;
+
+.header{
+    &__title-cuisine{
+        font-family: Dancing Script;
+        color: #e3c08d;
+        font-weight: 700;
+        font-size: fluid(36, 15);
+        text-align: center;
+        padding-top: fluid(100, 20);
+    }
+
+    &__subtitle-cuisine {
+        font-family: Poppins;
+        color: #fff;
+        font-weight: 600;
+        font-size: fluid(36, 15);
+        text-align: center;
+        padding-bottom: 50px;
+
+        @include mobile-s {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    &__img-offers {
+        position: absolute;
+        width: fluid(173, 50);;
+    }
+}
+
+
+.recommendation__menu {
+    background-color: #0b0e11;
+    margin-top: -1px;
+    padding-bottom: 100px;
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    &-eat {
+        position: relative;
+        width: fluid(370, 135);
+        height: fluid(500, 150);
+        overflow: hidden;
+    }
+
+    &-container {
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        width: 90%; 
+        background-color: white;
+        padding: 15px;
+        transition: height 0.5s ease;
+        overflow-y: auto;
+        height: auto; 
+        clip-path: polygon(0 0, 80% 0, 100% 21%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);    
+    }
+
+    &-eat:hover &-container { /* Правильный селектор при наведении */
+        height: 60%; 
+    }
+
+    &-icon {
+        max-height: 3px;
+        color: #e3c08d;
+        padding-right: 10px;
+
+        &--svg {
+            width: fluid(40, 12);
+        }
+    }
+
+    &-heading {
+        font-family: Poppins;
+        font-size: fluid(19, 6);
+        font-weight: 600;
+        color: #0f1622;
+    }
+
+    &-description {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: Poppins;
+        font-size: fluid(15, 5);
+        font-weight: 400;
+        color: #4e4f51;
+
+        &-parag {
+            padding-bottom: 8px;
+
+            @include tablet {
+                padding-bottom: 6px;
+            }
+        }
+    }
+    &-person {
+        font-family: Poppins;
+        font-size: fluid(12, 4);
+        font-weight: 400;
+        color: #959595;
+    }
+
+    &-price {
+        font-family: Poppins;
+        font-size: fluid(24, 7);
+        font-weight: 600;
+        color: #e3c08d;
+    }
+
+    &-eat:hover &-description { 
+        display: block;
+        opacity: 1;
+    }
+}
+
+.eat__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 79% 0, 100% 16%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+}

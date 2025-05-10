@@ -1,0 +1,76 @@
+@use '../helpers' as *;
+
+.testimonials {
+    background-color: #0d1518;
+    display: flex;
+    justify-content: center;
+
+
+    &__container {
+        max-width: 1440px;
+    }
+
+    &__header-title {
+        font-family: Dancing Script;
+        font-weight: 700;
+        font-size: fluid(36, 20);
+        color: #e3c08d;
+        padding-bottom: fluid(30, 10);
+        padding-top: fluid(30, 20);
+        text-align: center;
+    }
+
+    &__header-subtitle {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: fluid(36, 20);
+        color: #fff;
+        text-align: center;
+        padding-bottom: fluid(30, 10);
+    }
+    &__paragraph {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: fluid(20, 10);
+        color: #d4d4d4;
+        text-align: center;
+        line-height: fluid(35, 20);
+        padding: 0px 20px;
+    
+        &-img {
+            display: flex;
+            margin: 0 auto;
+            width: fluid(56, 20);
+            padding-bottom: fluid(30, 10);
+            padding-top: fluid(30, 10);
+        }
+    }
+
+    &__name {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: fluid(24, 10);
+        color: #fff;
+        text-align: center;
+        line-height: 26px;
+        margin-bottom: fluid(80, 30);
+    }
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+        align-items: start;
+    }
+}
+.nav-button-one {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.nav-button-two {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}

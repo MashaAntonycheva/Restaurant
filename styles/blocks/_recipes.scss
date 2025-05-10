@@ -1,0 +1,135 @@
+@use '../helpers' as *;
+
+.recipes {
+    background-color: #0B0E11;
+
+    &__header {
+        position: relative;
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            color: #e3c08d;
+            text-align: center;
+            padding-top: fluid(100, 30);
+            font-size: fluid(36, 15);
+        }
+    
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            padding-top: fluid(20, 10);
+            font-size: fluid(36, 15);
+            padding-bottom: fluid(70, 30);
+        }
+    
+        &-img {
+            width: fluid(173, 70);
+            position: absolute;
+            top: 0%;
+            left: 87%;
+        }
+    }
+
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 20px;
+        margin: 0 auto;
+
+        &-inner {
+            display: block;
+            background-color: #182226;
+            text-align: left;
+            text-decoration: none;
+            margin-bottom: fluid(100, 50);
+            clip-path: polygon(0 0, 79% 0, 100% 18%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+            
+            @include mobile {
+                clip-path: polygon(0 0, 90% 0, 100% 8%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &-title {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            font-size: fluid(22, 10);
+            padding: 30px 20px 0px 20px;
+
+            @include mobile {
+                padding: 24px 70px 0px 7px;
+            }
+
+            @include mobile-s {
+                padding: 8px 6px 0px 5px;
+            }
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 400;
+            color: #808080;
+            font-size: fluid(22, 7);
+            padding: 12px 20px 0px 20px;
+
+            @include mobile {
+                padding: 0px 20px 0px 9px;
+            }
+
+            @include mobile-s {
+                padding: 3px 3px 0px 5px;
+            }
+        }
+
+        &-img { 
+            width: 100%;
+            height: auto;
+            display: block; 
+            object-fit: cover; 
+        }
+
+        &-button {
+            display: grid;
+            grid-template-columns: 40px 190px;
+            padding: 47px 0px 30px 20px;
+
+            @include tablet {
+                padding: 20px 0px 30px 20px;
+            }
+
+            @include mobile {
+                grid-template-columns: 30px 107px;
+                padding: 10px 0px 20px 6px;
+            }
+
+            @include mobile-s {
+                grid-template-columns: 18px 60px;
+                padding: 10px 0px 20px 6px;
+            }
+
+            &--img {
+                border-radius: 50px;
+            }
+
+            &--button {
+                border: none;
+                background-color: #182226;
+                color: #fff;
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: fluid(16, 5);
+            }
+        }
+    }
+
+}

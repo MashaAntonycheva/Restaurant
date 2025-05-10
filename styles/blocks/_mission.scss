@@ -1,0 +1,122 @@
+@use '../helpers' as *;
+
+.mission {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(11, 19, 21, 0.7) 100%);
+
+    &__container {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 70px 30px;
+        align-items: center;
+
+        @include mobile {
+            padding: 30px 20px;
+        }
+
+        @include mobile-s {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+
+        @include mobile-s {
+            align-items: center;
+            padding-left: 0px;
+        }
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: fluid(36, 15);
+            color: #e3c08d;
+            padding: 30px 0px;
+
+            @include mobile-s {
+                padding-bottom: 0px;
+            }
+        }
+
+        &-brifly {
+           &--logo {
+               display: flex;
+               gap: 20px;
+
+               @include  mobile-s {
+                gap: 9px;
+               }
+            } 
+
+            &--title {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: fluid(20, 8);
+                color: #fff;
+                padding-top: 30px;
+                padding-bottom: 5px;
+            }
+
+            &--paragraf {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: fluid(16, 5);
+                line-height: 162%;
+                color: #d4d4d4;
+                padding-right: 40px;
+                width: fluid(362, 100);
+                height: auto;
+
+                @include mobile {
+                    padding-right: 0px;
+                }
+            }
+
+            &--img {
+                width: fluid(50, 20);
+                height: auto;
+            }
+        }
+    }
+
+    &__video {
+        width: fluid(658, 200);
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden; 
+
+        &-player {
+            &__panel {
+                position: absolute;
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%);
+                transition-duration: 0.3s;
+               
+                &:not(.is-active) {
+                    display: none;
+                }
+            }
+    
+            &__play-button {
+                background-color: transparent;
+                border: none;
+                color: #e3c08d;
+    
+                &-svg {
+                    width: fluid(90, 50);
+                    height: auto;
+                }
+            }
+        }
+        
+        
+    }      
+}

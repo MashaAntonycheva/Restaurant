@@ -1,0 +1,140 @@
+@use '../helpers' as *;
+
+.footer {
+    background-color: #0B0E11;
+
+    &__svg {
+        color: #E3C08D;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 335px 600px;
+        justify-content: center;
+        gap: 70px;
+
+        @include tablet {
+            grid-template-columns: 209px 523px;
+            gap: 50px;
+        }
+
+        @include mobile {
+            grid-template-columns: 161px 309px;
+            margin-top: -53px;
+            gap: 0px;
+        }
+
+        @include mobile-s {
+            grid-template-columns: 100px 216px;
+            margin-top: -72px;
+        }
+    }
+
+    &__about{
+        &-logo {
+            padding-top: 117px;
+
+            @include tablet {
+                width: 200px;
+            }
+
+            @include mobile-s {
+                width: 100px;
+            }
+        }
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: fluid(16, 5);
+            line-height: rem(34);
+            color: #A1A1A1;
+            padding-top: 30px;
+
+            @include mobile-s {
+                padding-top: 8px;
+                line-height: 18px;
+            }
+        }
+
+        &-contacts {
+            display: grid;
+            grid-template-columns: repeat(4, 18px);
+            gap: 23px;
+            padding-top: 30px;
+
+            @include mobile-s {
+                grid-template-columns: repeat(4, 9px);
+                gap: 11px;
+                padding-top: 14px;
+            }
+        }
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 118px 255px;
+        gap: 100px;
+        padding-top: 185px;
+        padding-left: 200px;
+
+        @include tablet {
+            grid-template-columns: 61px 219px;
+            gap: 100px;
+            padding-top: 132px;
+            padding-left: 91px;
+        }
+
+        @include mobile {
+            grid-template-columns: 63px 219px;
+            gap: 58px;
+        }
+
+        @include mobile-s {
+            grid-template-columns: 60px 85px;
+            gap: 16px;
+            padding-top: 112px;
+            padding-left: 70px;
+        }
+
+        &-title {
+            color: #fff;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: fluid(24, 7);;
+            line-height: rem(34);
+
+            @include mobile-s {
+                line-height: rem(2);
+            }
+        }
+
+        &-list {
+            text-decoration: none;
+            color: #A1A1A1;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: fluid(16, 5);
+            line-height: rem(34);
+
+            @include mobile-s {
+                line-height: rem(18);
+            }
+
+            &--find {
+                text-decoration: none;
+                color: #A1A1A1;
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: fluid(16, 5);
+                line-height: rem(34);
+                margin-left: -40px;
+
+                @include mobile-s {
+                    line-height: rem(18);
+                }
+            }
+        }       
+
+    }
+}

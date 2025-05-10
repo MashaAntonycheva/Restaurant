@@ -1,0 +1,102 @@
+@use '../helpers' as *;
+
+.newsletter {
+    background-color: #0D1518;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1440px;
+        overflow: hidden;
+        padding: 0px 20px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 80px;
+        padding-left: fluid(150, 30);
+        padding-right: fluid(150, 30);
+        padding-bottom: fluid(100,30);
+        align-items: center;
+    }
+
+    &__header {
+
+        @include mobile-s {
+            margin-top: 40px;
+        }
+
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            color: #e3c08d;
+            font-size: fluid(36, 10);
+            padding-bottom: 15px;
+        }
+
+        &-subtitle {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            font-size: fluid(36, 10);
+        }
+    }
+
+    &__email {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+
+        
+
+        &-button {
+            font-family: Poppins;
+            font-weight: 600;
+            color: #fff;
+            font-size: fluid(16, 5);
+            background-color: #E3C08D;
+            padding: 18px 30px;
+            border: none;
+
+            @include tablet {
+                padding: 18px 20px;
+            }
+
+            @include mobile {
+                height: 33px;
+                padding: 9px 20px;
+            }
+
+            @include mobile-s {
+                height: 26px;
+                padding: 0px 11px;
+            }
+        }
+
+        &-input {
+            padding: 18px 320px 18px 30px;
+            color: #D4D4D4;
+            font-family: Poppins;
+            font-size: fluid(16, 5);
+            font-weight: 400;
+            border: none;
+
+            @include tablet {
+                padding: 18px 0px 18px 15px;
+            }
+
+            @include mobile {
+                height: 33px;
+            }
+
+            @include mobile-s {
+                padding: 13px 0px 13px 6px;
+                height: 7px;
+            }
+        }
+    }
+
+    &__img {
+        width:  fluid(170, 30);
+    }
+}

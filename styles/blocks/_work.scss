@@ -1,0 +1,281 @@
+@use '../helpers' as *;
+
+.work {
+    background-color: #0d1518;;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        position: relative;
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    &__hours {
+        position: absolute;
+        background-color: #fff;
+        z-index: 3;
+        box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+        left: 25%;
+        top: 7%;
+        padding: 30px;
+
+        @include tablet {
+            left: 16%;
+        }
+
+        @include mobile {
+            padding: 15px;
+            left: 12%;
+            top: 18%;
+        }
+
+        @include mobile-s {
+            top: 9%;
+        }
+
+      
+            
+        &-mode {
+            display: flex;
+            justify-content: space-evenly;
+            
+            @include mobile {
+                line-height: 0.5;
+            }
+        }
+
+        
+        &-title {
+            font-family: Dancing Script;
+            font-weight: 700;
+            font-size: fluid(40, 15);
+            padding: 15px 0px;
+            text-align: center;
+            color: #E3C08D;
+
+            @include tablet {
+                padding-top: 0px;
+                padding-bottom: 5px;
+            }
+
+            @include mobile {
+                padding-bottom: 10px;
+            }
+
+        }
+
+        &-days {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: fluid(18, 8);
+            color: #0f1622;
+        }
+
+        &-time {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: fluid(18, 8);
+            color: #808080;
+
+            
+
+            &--closed {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: fluid(18, 8);
+                color: #ff6363;
+                
+            }
+        }
+
+
+        &-paragraf {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: fluid(16, 6);
+            padding-left: 44px;
+            padding-bottom: 30px;
+            color: #808080;
+            padding-right: 70px;
+        }
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 40px;
+        gap: 20px;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-one {
+            clip-path: polygon(0 0, 79% 0, 100% 26%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+            width: fluid(415, 120);
+            height: auto;
+        }
+
+        &-two {
+            clip-path: polygon(0 0, 100% 0, 100% 0, 100% 66%, 77% 100%, 0 100%, 0 100%, 0 0);
+            width: fluid(415, 120);
+            height: auto;
+        }
+
+        &-three {
+            clip-path: polygon(21% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 17%);
+            width: fluid(400, 120);
+            height: auto;
+        }
+
+        &-four {
+            position: absolute;
+            top: 33%;
+            left: 63%;
+            width: fluid(211, 50);
+            height: auto;
+        }
+
+        &-five {
+            position: absolute;
+            top: 72%;
+            left: 87%;
+            width: fluid(173, 60);
+            height: auto;
+        }
+    }
+
+}
+/*
+.work {
+    background-color: #0d1518;;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1221px;
+
+        @include tablet {
+            margin: 240px 0px;
+        }
+    }
+
+ 
+
+    &__img {
+        &-one{
+            margin: -770px 0px 0px 315px;
+            padding-top: 150px;
+            clip-path: polygon(0 0, 79% 0, 100% 26%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+            @include tablet {
+                width: 300px;
+                position: relative;
+                top: -22%;
+                left: 2%;
+            }
+
+            @include mobile {
+                width: 300px;
+                position: relative;
+                top: -18%;
+                left: 2%;
+            }
+
+            @include mobile-s {
+                width: 200px;
+                margin-top: -461px;
+                position: relative;
+                left: 20%;
+            }
+
+            
+        }
+
+        &-two{
+            margin: 23px 0px 0px 312px;
+            padding-bottom: 100px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 100% 66%, 77% 100%, 0 100%, 0 100%, 0 0);
+
+            @include tablet {
+                width: 300px;
+                position: relative;
+                top: -18%;
+                left: 2%;
+            }
+
+            @include mobile-s {
+                width: 200px;
+                position: relative;
+                top: -18%;
+                left: 20%;
+            }
+
+            
+        }
+
+        &-three{
+            margin: -596px 0px 0px 758px;
+            clip-path: polygon(21% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 17%);
+            padding-bottom: 87px;
+
+            @include tablet {
+                width: 300px;
+                position: relative;
+                top: 49%;
+                left: -11%;
+            }
+
+            @include mobile-s {
+                width: 0px;
+            }
+        }
+
+        &-four{
+            position: relative;
+            z-index: 1;
+            margin: -670px 0px 0px 647px;
+
+            @include tablet {
+                position: relative;
+                width: 100px;
+                top: 239%;
+                z-index: 6;
+                left: -438px;
+            }
+
+            @include mobile-s {
+                width: 0px;
+            }
+        }
+
+        &-five{
+            position: relative;
+            z-index: 1;
+            margin: 263px 0px 0px 1015px;
+            padding-bottom: 75px;
+
+            @include tablet {
+                position: relative;
+                width: 91px;
+                top: 163%;
+                left: -15%;
+            }
+
+            @include mobile {
+                top: 278%;
+                left: -45%;
+            }
+            @include mobile-s {
+                width: 0px;
+            }
+        }
+    }
+}
+
+*/

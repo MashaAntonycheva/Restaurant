@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+.main__video {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    position: relative;
+}
+
+.video-player {
+    &__video {
+        width: 100%;
+        max-width: fluid(1440, 370);
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    &__panel {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        transition-duration: 0.3s;
+       
+        &:not(.is-active) {
+            display: none;
+        }
+    }
+
+    &__play-button {
+        background-color: transparent;
+        border: none;
+        color: #e3c08d;
+        cursor: pointer;
+
+        &-svg {
+            @include tablet {
+                width: 100px;
+            }
+
+            @include mobile {
+                width: 90px;
+            }
+
+            @include mobile-s {
+                width: 80px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,106 @@
+@use '../helpers' as *;
+
+.cuisine {
+    background-color: #0b0e11;
+    padding-bottom: 50px;
+} 
+ 
+.header {
+    &__title-cuisine-menu {
+       font-family: Dancing Script;
+       font-weight: 400;
+       font-size: fluid(36, 15);
+       padding-top: fluid(36, 15);
+       text-align: center;
+       color: #E3C08D;
+       padding-bottom: rem(30);
+    }
+
+    &__subtitle-cuisine-menu {
+       font-family: Poppins;
+       font-size: fluid(36, 15);
+       color: white;
+       text-align: center; 
+    }
+}
+
+.cuisine-cards {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    justify-items: center;
+    margin: 0 auto;
+    padding: 40px 15px;
+ }
+
+.cuisine-card {
+    background-color: #182226;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__eating {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-areas: "icon info" "icon description";
+        align-items: start;
+        gap: rem(12) rem(20);
+        padding: clamp(10px, 2vw, 35px); 
+    }
+
+    &__one {
+        clip-path: polygon(7% 0, 100% 0, 100% 20%, 100% 80%, 93% 100%, 8% 100%, 0 100%, 0 19%);
+    }
+
+    &__two {
+        clip-path: polygon(0 0, 93% 1%, 100% 20%, 100% 100%, 100% 100%, 7% 100%, 0 80%, 0 0);
+    }
+
+    &__icon {
+
+        @include mobile {
+            padding-bottom: 20px;
+        }
+
+        &-img {
+            @include mobile {
+                width: 30px;
+            }
+
+            @include mobile-s {
+                width: 15px;
+            }
+        }
+    }
+
+    &-text {
+        @include mobile {
+            margin-left: -40px;
+        }
+
+        @include mobile-s {
+            margin-left: -50px;
+        }
+    }
+
+    &__title {
+        color: #E3C08D;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: fluid(22, 12);
+        padding-bottom: rem(12);
+    }
+
+    &__description {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: fluid(14, 8);
+        color: #808080;
+        list-style: rem(26);
+    }
+}
+
