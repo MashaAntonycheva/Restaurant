@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant | Exotic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script src="./script/main.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header-other" data-js-header>
+    <div class="header__body-main">
+      <div class="header__body-main--inner-other container">
+        <a
+          class="header__logo"
+          href="/"
+          aria-label="Home"
+          title="Home"
+        >
+          <img
+            class="nav__logo-image" 
+            src="./images/home/logo.svg" alt=""
+            width="234" height="72" loading="lazy"
+          />
+        </a>
+        <div class="header__overlay-main" data-js-header-overlay>
+          <nav class="header__menu-main">
+            <ul class="header__menu-main--list">
+              <li class="header__menu-main--item">
+                <a class="header__menu-link--other" href="./index.html">Home</a>
+              </li>
+              <li class="header__menu-main--item">
+                <a class="header__menu-link--other" href="./ourmenu.html">Our Menu</a>
+              </li>
+              <li class="header__menu-main--item">
+                <a class="header__menu-link--other" href="/">Gallery</a>
+              </li>
+              <li class="header__menu-main--item">
+                <a class="header__menu-link--other" href="./aboutus.html">About Us</a>
+              </li>
+              <li class="header__menu-main--item">
+                <a class="header__menu-main--link-active" href="./more.html">More</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="header__body-other">
+      <img class="header__ourmenu-img--one" 
+        src="./images/ourmenu/heander-1.png" alt=""
+        width="173" height="168" loading="lazy" 
+      />
+      <h1 class="header__ourmenu-title">More</h1>
+      <img class="header__ourmenu-img--two"
+         src="./images/ourmenu/heander-2.png" alt=""
+         width="173" height="90" loading="lazy" 
+      />      
+    </div>
+      
+  </header>
+  <main>
+    <section class="connection" aria-labelledby="Contact-Us">
+        <div class="connection__container">
+            <div class="connection__info">
+                <h1 class="connection__info-title">Reach Us</h1>
+                <h2 class="connection__info-subtitle">Get in Touch with Us</h2>
+                <p class="connection__info-paragraf">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt </p>
+                <div class="connection__contact">
+                    <img class="connection__contact-logo"
+                      alt="" src="./images/contactus/tel.svg"
+                      width="50" height="50" loading="lazy"
+                    />
+                    <div>
+                        <a class="connection__contact-link" href="tel:+919515889944">+91 9515889944</a>
+                        <p class="connection__contact-title">Telephone</p>
+                    </div>
+                </div>
+                <div class="connection__contact">
+                    <img class="connection__contact-logo"
+                      alt="" src="./images/contactus/email.svg"
+                      width="50" height="50" loading="lazy"
+                    />
+                    <div>
+                        <a class="connection__contact-link" href="mailto:hello@exoticindiaeats.com">hello@exoticindiaeats.com</a>
+                        <p class="connection__contact-title">Email</p>
+                    </div>
+                </div>
+                <div class="connection__contact">
+                    <img class="connection__contact-logo"
+                      alt="" src="./images/contactus/location.svg"
+                      width="50" height="50" loading="lazy"
+                    />
+                    <div>
+                        <a class="connection__contact-link" href="https://g.co/kgs/x9ZuqPz" target="_blank">Braga St 28, Bandung, West Java</a>
+                        <p class="connection__contact-title">Location</p>
+                    </div>
+                </div>
+            </div>
+            <form action="/" class="connection__form-contact">
+              <div>
+                <img class="connection__form-img"
+                  src="./images/contactus/Group 2.png" alt=""
+                  width="132" height="134" loading="lazy"
+                />
+                <h2 class="connection__form-title">Contact Form</h2>
+              </div>
+                <div class="connection__form-tabl">
+                  <input class="connection__form-name" type="text" placeholder="Name" required>
+                  <input class="connection__form-email" type="email" placeholder="Email" required>
+                  <input class="connection__form-tel" type="tel" placeholder="Phone Number" required>
+                  <input class="connection__form-subject" placeholder="Subject" required>
+                  <textarea class="connection__form-message" placeholder="Message..."></textarea>
+                </div>
+                <div>
+                  <button class="connection__form-submit" type="submit">SUBMIT</button>
+                  <img class="connection__form-img-two"
+                     src="./images/contactus/Group 3.png" alt=""
+                    width="105" height="107" loading="lazy"
+                  />
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <section class="work"  aria-labelledby="Opening-Hours">
+        <div class="work__container">
+            <div class="work__hours">
+                <h1 class="work__hours-title">Opening Hours</h1>
+                <div class="work__hours-mode">
+                    <div class="work__hours-days">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="work__hours-time">
+                        <p>: 09.00 - 23.00</p>
+                        <p>: 09.00 - 23.00</p>
+                        <p>: 09.00 - 23.00</p>
+                        <p>: 09.00 - 23.00</p>
+                        <p>: 09.00 - 23.00</p>
+                        <p>: 09.00 - 23.00</p>
+                        <p class="work__hours-time--closed">Closed</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="work__img">
+              <div class="work__img-left">
+                <img class="work__img-one"
+                  src="./images/contactus/img-1.jpg" alt=""
+                  width="415" height="334" loading="lazy"
+                />
+                <img class="work__img-two"
+                    src="./images/contactus/img-3.jpg" alt=""
+                    width="415" height="284" loading="lazy"
+                />
+              </div>
+
+              <img class="work__img-three"
+                  src="./images/contactus/img-2.jpg" alt=""
+                  width="400" height="500" loading="lazy"
+              />
+            </div>
+            <img class="work__img-four"
+                src="./images/contactus/Group 4.png" alt=""
+                width="211" height="112" loading="lazy"
+            />
+            <img class="work__img-five"
+                src="./images/ourmenu/Appertizer-5.png" alt=""
+                width="173" height="168" loading="lazy"
+            />
+        </div>
+        
+        
+
+    </section>
+
+    <section class="chef" aria-labelledby="Our-Chef">
+        <div class="chef__container">
+            <div class="chef__grid">
+                <div class="chef__header">
+                    <h1 class="chef__header-title">Discover</h1>
+                    <h2 class="chef__header-subtitle">Our Chef will Make<br>You Satisfying</h2>
+                    <p class="chef__header-paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architectoerror sit voluptatem accusantium doloremque laudantium  ab illo</p>
+                    <button class="chef__header-button">ORDER NOW</button>
+                </div>
+                <img class="chef__photo" 
+                  src="./images/contactus/chef.jpg" alt=""
+                  width="660" height="430" loading="lazy"
+                />
+            </div>
+            <img class="chef__img" 
+                  src="./images/contactus/Group 5.png" alt=""
+                  width="173" height="192" loading="lazy"
+                />
+        </div>
+    </section>
+
+    <section class="networks" aria-labelledby="Social-network">
+        <div class="networks__container">
+            <a href="https://www.facebook.com/?locale=ru_RU" target="_blank">
+                <img class="networks__container-img"
+              alt="" src="./images/contactus/facebook.png"
+              width="42" height="42" loading="lazy"
+            />
+            </a>
+            <svg class="networks__container-svg" width="2" height="180" viewBox="0 0 2 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M1 0V90V180" stroke="#AAAAAA"/>
+            </svg>
+            <a href="https://x.com/" target="_blank">
+                <img class="networks__container-img"
+              alt="" src="./images/contactus/x.png"
+              width="42" height="42" loading="lazy"
+            />
+            </a>
+            <svg class="networks__container-svg" width="2" height="180" viewBox="0 0 2 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M1 0V90V180" stroke="#AAAAAA"/>
+            </svg>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="networks__container-img"
+              alt="" src="./images/contactus/inst.png"
+              width="42" height="42" loading="lazy"
+            />
+            </a>
+            
+            <svg class="networks__container-svg" width="2" height="180" viewBox="0 0 2 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M1 0V90V180" stroke="#AAAAAA"/>
+            </svg>
+            <a href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
+                <img class="networks__container-img"
+              alt="" src="./images/contactus/youtube.png"
+              width="42" height="32" loading="lazy"
+            />
+            </a>
+            
+            <svg class="networks__container-svg" width="2" height="180" viewBox="0 0 2 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M1 0V90V180" stroke="#AAAAAA"/>
+            </svg>
+            <a href="https://www.line.me/" target="_blank">
+                <img class="networks__container-img"
+                alt="" src="./images/contactus/line.png"
+                width="42" height="42" loading="lazy"
+              />
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="map" aria-labelledby="Map">
+        <div class="map__wrapper">
+          <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a>
+          <a href="https://yandex.ru/maps/120800/south-sumatra/geo/4812523216/?ll=105.033332%2C-2.946706&utm_medium=mapframe&utm_source=maps&z=10.21" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a>
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=105.033332%2C-2.946706&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0ODEyNTIzMjE2EmRJbmRvbmVzaWEsIFN1bWF0ZXJhIFNlbGF0YW4sIEthYnVwYXRlbiBPZ2FuIEtvbWVyaW5nIElsaXIsIEtlY2FtYXRhbiBKZWphd2ksIEpsLiBEZXNhIEx1YnVrIEtldGVwZW5nIgoNTuPRQhX8_UzA&z=10.21" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__body">
+      <div class="footer__about">
+        <img class="footer__about-logo"
+          src="./images/home/logo-2.png" alt=""
+          width="333" height="103" loading="lazy"
+        />
+        <p class="footer__about-paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Sed ut perspiciatis unde omnis iste </p>
+        <div class="footer__about-contacts">
+          <a href="https://www.facebook.com/?locale=ru_RU" target="_blank">
+            <img class="footer__about-contacts-one"
+                src="./images/home/facebook.png" alt=""
+                width="17" height="17" loading="lazy"
+            />
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img class="footer__about-contacts-two"
+           src="./images/home/x.png" alt=""
+           width="17" height="17" loading="lazy"
+          />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img class="footer__about-contacts-three"
+           src="./images/home/instagram.png" alt=""
+           width="17" height="17" loading="lazy"
+          />
+          </a>
+          <a href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
+            <img class="footer__about-contacts-four"
+           src="./images/home/YouTube.png" alt=""
+           width="17" height="17" loading="lazy"
+          />
+          </a>
+        </div>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu-main">
+          <div clacc="footer__menu-inner">
+            <h1 class="footer__menu-title">Menu</h1>
+            <svg class="footer__svg" width="45" height="2" viewBox="0 0 45 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="45" height="2" fill="#E3C08D"/>
+            </svg>              
+          </div>
+          <ul class="footer__menu-list">
+            <li>
+              <a class="footer__menu-list" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="footer__menu-list" href="./ourmenu.html">Our Menu</a>
+            </li>
+            <li>
+              <a class="footer__menu-list" href="./aboutus.html">About Us</a>
+            </li>
+            <li>
+              <a class="footer__menu-list" href="./more.html">More</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-contact">
+          <div clacc="footer__menu-inner">
+            <h1 class="footer__menu-title">Find Us</h1>
+            <svg class="footer__svg" width="45" height="2" viewBox="0 0 45 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="45" height="2" fill="#E3C08D"/>
+            </svg>              
+          </div>
+          <ul>
+            <li>
+              <a class="footer__menu-list--find" href="https://maps.app.goo.gl/XFoPg5hvn4fBKXsN9" target="_blank">Manikonda, Hyderabad,<br>Telangana, India, 500089 </a>
+            </li>
+            <li>
+              <a class="footer__menu-list--find" href="tel:+919515889944">+91 9515889944</a>
+            </li>
+            <li>
+              <a class="footer__menu-list--find" href="mailto:design@chasvi.com">design@chasvi.com</a>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <svg width="1170" height="2" viewBox="0 0 1170 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.2" d="M0 1H1170" stroke="white"/>
+    </svg>
+    <p class="footer__paragraf">
+      © Copyright Chasvi Co 2025, All right reserved.
+    </p>
+   
+  </footer>
+</body>
+</html>
